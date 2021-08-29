@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  background-color: rgb(233, 230, 230);
+  flex-wrap: wrap;
+}
+nav.side {
+  position: fixed;
+  top: 2vh;
+  right: 0;
+  background-color: rgb(236, 61, 61);
+  width: 10vw;
+  height: 90vh;
+  color: white;
+  margin: 0;
+  border-radius: 3px;
+}
+nav.side i {
+  font-size: 2.5rem;
+  margin: 1rem;
+  cursor: pointer;
+}
+.container {
+  margin: 1rem 2.5rem;
+  height: 90vh;
+  width: 75vw;
+  min-height: 90vh;
+  background-color: rgb(173, 226, 173);
+  background-image: url(bg.png);
+  background-position: center;
+  background-size: cover;
+  flex-wrap: wrap;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  width: 88%;
+  flex-wrap: wrap;
+}
+.head {
+  margin: 0.6rem auto 0 auto;
+  display: flex;
+  width: 65%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.logo {
+  color: teal;
+}
+
+.menu ul {
+  display: flex;
+  list-style-type: none;
+
+  justify-content: center;
+  align-items: center;
+  
+}
+.menu li {
+  padding: 0;
+  display: flex;
+  cursor: pointer;
+ 
+}
+.menu a {
+  padding: 0.5rem;
+  color: white;
+  font-size: small;
+  text-decoration: none;
+  background-color: rgb(21, 166, 192);
+
+  width: 7rem;
+  text-align: center;
+}
+.menu a.selected,.menu a:active {
+  background-color: white;
+  color: teal;
+  font-weight: bold;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: auto;
+ 
+}
+.content h3 {
+  margin: 5rem 0 0.25rem 0;
+  padding: 1rem 2rem;
+  background-color: teal;
+  width: fit-content;
+  color: white;
+  font-weight: lighter;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.content input {
+  margin-top: 0;
+  width: 8rem;
+  padding: 0.5rem;
+  color: teal;
+  border: teal 1px solid;
+  border-radius: 2px;
+  font-weight: bold;
+  border: none;
+}
+.content input::placeholder {
+  color: rgb(194, 218, 218);
+}
+input:focus {
+  outline: none;
+}
+.content a {
+  background-color: teal;
+  width: fit-content;
+  color: white;
+  padding: 0.25rem 1rem;
+  text-decoration: none;
+  margin-top: 0.2rem;
+}
+a.highlight {
+  background-color: teal;
+}
+.progress{
+  background-color: black;
+  width: 10rem;
+  height: 3rem;
+  position: fixed;
+  bottom: 3px;
+  color: white;
+}
+@media screen and  (max-width:700px) {
+  .container {
+    flex-wrap: wrap;
+  }
+  .header {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .head{
+    justify-content: center;
+    flex-direction: column;
+  }
+  .menu ul {
+      flex-direction: column;
+      flex-wrap: wrap;
+
+  }
+  .side{
+      display: none;
+  }
+  a{
+      color: red;
+  }
+  
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Base Website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/b8da387c6d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="hamburger"><i class="fas fa-bars"></i></a>
+    <a href="" class="phone">
+      <i class="fas fa-phone"></i>
+    </a>
+    <div class="logo">
+      <i class="fas fa-shoe-prints"></i>
+      <h2>Shoe are Us</h2>
+      <p>Find the right fit for you</p>
+    </div>
+    <div class="carousel-co">
+      <div class="carousel" id="carousel">
+        <div class="slide" data-bg="#CB011B">
+          <img src="shoe/shoe-3.jpg" alt="shoe-3" />
+          <h1>Performance</h1>
+          <a href="">Learn More</a>
+        </div>
+        <div class="slide" data-bg="#DDDFE0">
+          <img src="shoe/shoe-2.jpg" alt="shoe-2" />
+          <h1>Design</h1>
+          <a href="">Learn More</a>
+        </div>
+        <div class="slide" data-bg="#493020">
+          <img src="shoe/shoe-1.jpg" alt="shoe-1" />
+          <h1>Strong</h1>
+          <a href="">Learn More</a>
+        </div>
+        <div class="slide" data-bg="#636664">
+          <img src="shoe/shoe-4.jpg" alt="shoe-4" />
+          <h1>ligtness</h1>
+          <a href="">Learn More</a>
+        </div>
+      </div>
+      <button id="left" class="arrow-left arrow">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <button id="right" class="arrow-right arrow">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+      <div class="progress">
+          <label for="" onclick="labelSubmit(1)" class="active">11</label>
+          <label for="" onclick="labelSubmit(2)">12</label>
+          <label for="" onclick="labelSubmit(3)">13</label>
+          <label for="" onclick="labelSubmit(4)">14</label>
+      </div>
+    </div>
+    <script src="script.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+*{
+    box-sizing: border-box;
+}
+body{
+
+    font-family: "Roboto",sans-serif;
+    margin: 0;
+background-image: url(bg.png);
+background-position: center center;
+background-size: 100% 100%;
+min-height: 100vh;
+padding: 2rem;
+
+
+}
+p{
+text-align: justify;
+font-size: 1.5rem;
+width: 700px;
+position: fixed;
+top:1rem;
+left: 3rem;
+}
+h1{
+font-size: 4rem;
+background-color: #fff;
+padding: 1.5rem;
+font-weight: 200;
+position: fixed;
+display: inline-block;
+top:8rem;
+left: 2rem;
+opacity: .8;
+}
+.fa-quote-right{
+    font-size: 20rem;
+    color: white;
+    opacity: .4;
+    position: fixed;
+    top: 5rem;
+    right: 15rem;
+}
+ul{
+position: fixed;
+top:10rem;
+right: 6rem;
+font-size: 2rem;
+
+
+}
+h3{
+    color: #29415e;
+    margin: 0;
+}
+a{
+position: fixed;
+top: 2rem;
+right: 3rem;
+color: black;
+text-decoration: none;
+font-size: 1.5rem;
+text-align: right;
+}
+h2{
+position: fixed;
+top: 20rem;
+left: 23rem;
+text-align:right;
+}
+h2 span{
+background-color: #556272;
+color: white;
+font-weight: 200;
+padding: 1rem;
+display: inline-block;
+
+}
+h2 span:last-child{
+    transform:translate(-1rem,-1rem);
+}
+
+@media screen and (max-width:768px) {
+    *{
+        position: static !important;
+        max-width: 100%;
+        
+    }
+    h1{
+        font-size: 3rem;
+        width: 100%;
+        position: sticky;
+        top: 0;
+    }
+    .fa-quote-right{
+        display: none;}
+}

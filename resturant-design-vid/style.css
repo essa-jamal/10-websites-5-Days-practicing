@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+ 
+}
+header {
+  background-image: url(bg.png);
+  background-size: cover;
+  min-height: 100vh;
+  background-position: center center;
+  
+}
+.container {
+  padding: 1rem;
+  max-width: 1000px;
+  max-height: 100vh;
+  margin: 0 auto;
+}
+.pre-nav {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  margin-bottom: -1.5rem;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+.logo {
+  color: #026e78;
+  font-weight: bold;
+  font-size: 2rem;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+nav,
+.pre-nav {
+  padding: 1rem;
+}
+nav li {
+  flex: 1 auto;
+}
+nav li a {
+  background-color: #2d99a4;
+  padding: 1rem 2rem;
+  display: block;
+}
+nav a.active {
+  background-color: white;
+  color: #026e78;
+  font-weight: bold;
+}
+nav a.highlight {
+  background-color: #026e78;
+  color: white;
+}
+nav a:hover {
+  opacity: 0.8;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+  padding: 0 1rem;
+  font-size: 2rem;
+  align-items: flex-start;
+}
+.content h1 {
+  background-color: #026e78;
+  color: white;
+  display: inline-block;
+  font-weight: 200;
+}
+.white-link {
+  background-color: #fff;
+  color: #2d99a4;
+  padding: 1rem;
+}
+.teal-link {
+  color: #fff;
+  background-color: #2d99a4;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+@media screen and (max-width: 600px) {
+  .pre-nav {
+    flex-direction: column;
+    justify-content: center;
+  }
+  nav ul {
+    
+    text-align: center;
+    flex-direction: column;
+  }
+  .content {
+    font-size: 1.4rem;
+  }
+}
